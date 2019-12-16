@@ -53,6 +53,8 @@ try:
         groupy.organise()
     elif chc == 2:
         groupy.unorganise()
+    print("Done")
 
 except Exception as err:
     print(err)
+n = input("enter to continue")
