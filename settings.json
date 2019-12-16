@@ -1,0 +1,13 @@
+{
+    "track": " ",                                           
+    "destination_base": " " ,                               
+    "destination_folder": {            
+        "documents": ["doc","txt","pdf"],
+        "sound": ["mp3","wav"],
+        "video": ["mp4","3gp"],
+        "images": ["jpg","png","jpeg","gif"],
+        "softwares": ["exe"],
+        "zip files": ["zip"]
+    },
+    "junkfolder": "extra"          
+}
