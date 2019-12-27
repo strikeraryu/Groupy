@@ -1,3 +1,4 @@
+
 import os
 import time
 import json
@@ -44,7 +45,10 @@ class Groupy(object):
             for filename in os.listdir(setting["destination_base"] + "/" + folder):
                 src =  setting["destination_base"] + "/" + folder  + "/" + filename
                 dst =  setting["track"] + "/" + filename
-                os.rename(src,dst)  
+                try:
+                    os.rename(src,dst)
+                except FileExistsError:
+                    print(" !! SKIPPED !! \nfile already exists:  ",src)  
 
 try:
     groupy  = Groupy()
